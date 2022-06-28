@@ -1,3 +1,23 @@
+# Job assignment for Prague Labs: React Developer position
+
+Job offer available [here](https://praguelabs.com/cook-with-us/position/react) ([web archive](https://web.archive.org/web/20220628142026/https://praguelabs.com/cook-with-us/position/react)).
+
+Available on Vercel: https://job-assignment-prague-labs-nextjs.vercel.app/
+
+`npm install` and then `npm run dev` to start a web server.
+
+Skeleton has been provided (see the second commit), my changes:
+
+- Added responsive design based on the wireframe in Adobe XD
+- Used styled-components for CSS
+- Data gets prefetched via getServerSideProps
+- ESLint + Prettier + import rules + EditorConfig
+- The API randomly errors to show that I gracefully handle these things :)
+
+I didn't add the carousel from bonus objectives, I'm a lazy raccoon and this is good enough already.
+
+Requirements for the job assignment below (sorry, in Czech).
+
  # Zadání
 
 Cílem tohoto zadání je prověřit si základní znalosti vývoje responsivních webových aplikací v Reactu.
