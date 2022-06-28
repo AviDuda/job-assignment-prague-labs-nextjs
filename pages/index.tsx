@@ -1,4 +1,5 @@
 import { GetServerSideProps } from "next";
+import Head from "next/head";
 import Image from "next/image";
 import { useState } from "react";
 import styled from "styled-components";
@@ -44,6 +45,24 @@ const Home = ({ productData }: HomeProps) => {
 
     return (
         <PageWrapper>
+            <Head>
+                <title>Karavany k vypůjčení</title>
+                {productData && productData.items.length > 0 && (
+                    <>
+                        <meta property="og:title" content="Karavany k vypůjčení" />
+                        <meta
+                            property="og:description"
+                            content={`Pořiďte si karavan na cestu snů. Jednoduché vypůjčení garantováno.`}
+                        />
+                        <meta
+                            property="og:image"
+                            content={
+                                productData.items[Math.floor(Math.random() * productData.items.length)].pictures[0]
+                            }
+                        />
+                    </>
+                )}
+            </Head>
             <header>
                 <HeadingContainer>
                     <Image src={logo} alt="Prague Labs" />
